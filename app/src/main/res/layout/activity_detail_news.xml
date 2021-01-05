@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailNewsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@null"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <ImageView
+        android:padding="8dp"
+        android:id="@+id/detail_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/toolbar2"
+        android:src="@drawable/trump"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/detail_text_view_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_text_view_3"
+        android:text="Title"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/detail_text_view_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/detail_text_view_1"
+        android:padding="8dp"
+        android:text="Description"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/detail_text_view_3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_image_view"
+        android:padding="8dp"
+        android:text="Source"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/detail_follow_button"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:layout_toRightOf="@id/detail_text_view_3"
+        android:layout_below="@id/detail_image_view"
+        android:padding="8dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Follow"
+        android:textSize="10sp" />
+
+    <ImageButton
+        android:id="@+id/detail_play_button"
+        android:layout_width="80sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/detail_image_view"
+        android:layout_alignParentRight="true"
+        android:backgroundTint="@color/teal_200"
+        android:src="@drawable/ic_baseline_play_arrow_24"
+        />
+
+</RelativeLayout>

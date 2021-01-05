@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/follow_setting"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        android:title="News Setting" />
+
+    <item android:id="@+id/signOut"
+        android:icon="@drawable/ic_baseline_more_vert_24"
+        android:title="Sign Out" />
+
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item android:id="@+id/menu_play_button"
+        android:icon="@drawable/ic_baseline_play_arrow_24"
+        android:title="Play Button"
+        app:showAsAction="always"
+        />
+
+</menu>

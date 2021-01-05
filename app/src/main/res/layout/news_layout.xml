@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/trump"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/text_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_3"
+            android:text="Title"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_1"
+            android:padding="8dp"
+            android:text="Read More" />
+
+        <TextView
+            android:id="@+id/text_view_3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_view"
+            android:padding="8dp"
+            android:text="Source"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/follow_button"
+            android:layout_width="80sp"
+            android:layout_height="50sp"
+            android:layout_toRightOf="@id/text_view_3"
+            android:layout_below="@id/image_view"
+            android:padding="8dp"
+            android:backgroundTint="@color/purple_500"
+            android:text="Follow"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

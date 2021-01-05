@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsSettingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/setting_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageButton
+        android:id="@+id/setting_backButton"
+        android:layout_width="72dp"
+        android:layout_height="56dp"
+        android:background="@null"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+    <Button
+        android:id="@+id/setting_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/transparent"
+        android:text="Save"
+        android:textSize="18sp"
+        android:textColor="#0022FF" />
+
+    <TextView
+        android:id="@+id/setting_text_view_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_toolbar"
+        android:text="Receive Notification"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_text_view_notification"
+        android:ems="10"
+        android:hint="Enter Time" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_text_view_notification"
+        android:layout_toRightOf="@id/editText1"
+        android:ems="10"
+        android:hint="Enter Time" />
+
+    <Button
+        android:id="@+id/get_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText1"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Set Date" />
+
+
+    <TextView
+        android:id="@+id/setting_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/get_date_button"
+        android:text="News Following"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/setting_text_view">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/setting_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="?attr/actionBarSize"
+            tools:listitem="@layout/following_news_layout">
+        </androidx.recyclerview.widget.RecyclerView>
+    </ScrollView>
+
+</RelativeLayout>
