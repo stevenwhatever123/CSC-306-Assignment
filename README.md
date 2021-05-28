@@ -12,7 +12,7 @@ It also sets up alerts that can be pushed to a user when stories they are intere
 In the implementation, it is targeted to run Android API level 27 or above.  
 An extra implementation I have done is adding a text to speech feature, where the app would read out the text in the news. It will still works even if the app is running in the background.  
 
-I scored 78% in this assignment and find it interesting throughout the whole implementation process even though I async problems are hard to debug and solve.  
+I scored 78% in this assignment and find it interesting throughout the whole implementation process even though async problems are hard to debug and solve.  
 
 The database system I used for storing user account details and news preferences is Firebase, a platform developed by Google.  
 However, if you tried to run my build, it should not work since my Firebase trial has ended. 
