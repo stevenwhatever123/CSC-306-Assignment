@@ -10,7 +10,7 @@ The app will display key information such as news publisher, article title, arti
 It also sets up alerts that can be pushed to a user when stories they are interested in are available.  
 
 In the implementation, it is targeted to run Android API level 27 or above.  
-An extra implementation I have done is adding a text to speech feature, where the app would read out the text in the news. It wil still works if the app is running in the background.  
+An extra implementation I have done is adding a text to speech feature, where the app would read out the text in the news. It will still works even if the app is running in the background.  
 
 I scored 78% in this assignment and find it interesting throughout the whole implementation process even though I async problems are hard to debug and solve.  
 
